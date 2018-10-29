@@ -18,10 +18,11 @@
         </form>
     </div>
 
-    <ul>
-        {% for todo in todos %}
-        <li><input type="checkbox">{{ todo.text }}</li>
-        {% endfor %}
-    </ul>
+        <ul>
+            {% for todo in todos %}
+            <li>{{ todo.text }} <a href="/done/{{ todo.id }}">Done</a></li>
+            {% endfor %}
+        </ul>
+    
 </body>
 </html>
